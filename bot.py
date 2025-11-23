@@ -27,7 +27,7 @@ WEBHOOK_SECRET = os.getenv("WEBHOOK_SECRET")
 SYMBOL = "ETH/USDT:USDT"
 
 # 한 번 주문할 때 사용할 USDT 기준 포지션 크기
-POSITION_SIZE_USDT = 20     # 예: 20 USDT
+POSITION_SIZE_USDT = 50     # 예: 50 USDT
 
 # 레버리지 (OKX 웹/앱 설정과 맞춰두면 좋음)
 LEVERAGE = 10
@@ -267,3 +267,4 @@ if __name__ == "__main__":
     # 로컬에서 실행: python bot.py
     # 서버에서 실행할 땐 host="0.0.0.0" 으로 두면 외부에서 접근 가능
     app.run(host="0.0.0.0", port=5000)
+
